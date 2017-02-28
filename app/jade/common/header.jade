@@ -1,2 +1,9 @@
 header.mainheader
-  h1 Hello!
+  .container
+    .mainheader__inner
+      .logo
+        img(src="img/logo.jpg", alt="Logo")
+      ul.main-nav
+        each item in ["l'azienda", 'Settori', 'opere principali', 'qualita', 'contatti']
+          li.main-nav__item
+            a(href="#").main-nav__link= item
