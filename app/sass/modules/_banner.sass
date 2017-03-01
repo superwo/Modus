@@ -1,0 +1,47 @@
+.banner
+  background-color: #e0e1e0
+
+  &__list
+    margin: 0
+    padding: 0
+
+  &__item
+    list-style-type: none
+    display: block
+    height: 400px
+
+  &__link
+    display: block
+    color: $main-color
+    text-decoration: none
+    position: relative
+    height: 100%
+    background-image: url(../img/foto/demo.jpg)
+    background-size: cover
+    background-position: left bottom
+    &:hover
+      text-decoration: none
+      color: $main-color
+
+  &__info
+    position: absolute
+    font-size: rem(14px)
+    left: 0
+    bottom: 0
+    width: 100%
+    background-color: rgba(#fff,.7)
+    padding: 15px
+  &__title
+    font-size: rem(20px)
+    text-transform: uppercase
+    font-family: 'impact', sans-serif
+    display: inline-block
+    vertical-align: middle
+    margin-right: 15px
+
+  .slick-dots
+    height: 67px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding-right: 15px
