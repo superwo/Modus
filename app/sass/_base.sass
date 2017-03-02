@@ -47,6 +47,8 @@ h1
 // Basic Text Style
 
 p
+	font-size: rem(14px)
+	color: $text-color
   margin: 0 0 20px 0
 
 em
@@ -92,5 +94,32 @@ footer.mainfooter
 	max-width: 100%
 	height: auto
 
-// .hidden
-//   display: none
+section
+	position: relative
+	padding-top: 70px
+.section-title
+	position: absolute
+	top: rem(-65px)
+	left: rem(15px)
+	z-index: 5
+	font-family: $title-font
+	text-transform: uppercase
+	margin: 0
+	letter-spacing: 0.5px
+	line-height: 1.7
+	white-space: nowrap
+	&::after
+		content: ''
+		display: block
+		+size(140px)
+		border: 9px solid $main-color
+
+.section-subtitle
+	margin: 0
+	line-height: 1
+	white-space: nowrap
+	font-size: 21px
+	text-transform: uppercase
+	color: $accent-color
+	font-weight: 400
+	margin-bottom: 8px
