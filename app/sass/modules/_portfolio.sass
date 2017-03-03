@@ -1,0 +1,63 @@
+.portfolio
+  text-align: center
+  &__title
+  	font-family: $title-font
+  	text-transform: uppercase
+  	margin: 0
+  	letter-spacing: 0.5px
+  	line-height: 1.7
+  	white-space: nowrap
+
+  &__description
+    display: block
+    margin: 0 auto rem(20px)
+    font-family: 'pt-regular', sans-serif
+    color: $text-color
+    font-size: rem(14px)
+    width: 98%
+    max-width: 550px
+
+  &__filters
+    margin-bottom: rem(20px)
+    &-item
+      display: inline-block
+
+  &__item
+    height: 250px
+    margin-bottom: 15px
+  &__link
+    display: block
+    height: 100%
+    width: 100%
+    overflow: hidden
+    position: relative
+    color: #fff
+    &:hover
+      color: #fff
+      text-decoration: none
+      .portfolio__info
+        transform: scale(1)
+        opacity: 1
+    img
+      height: 100%
+      width: auto
+  &__info
+    background-color: rgba($main-color, 0.8)
+    position: absolute
+    +size(90%)
+    top: 5%
+    left: 5%
+    transform: scale(0)
+    font-size: rem(14px)
+    padding: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transition: all .3s ease-out
+    // span
+    //   position: relative
+    //   display: inline-block
+    //   top: 50%
+    //   left: 50%
+    //   transform: translate(-50%, -50%)

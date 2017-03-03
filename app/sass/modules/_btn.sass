@@ -2,12 +2,22 @@
   display: inline-block
   vertical-align: middle
   text-align: center
-  padding: 10px 20px 0
-  height: 40px
-  font: normal 14px/14px Arial, sans-serif
+  padding: 0px 20px
+  height: 26px
+  line-height: 26px
+  font-family: 'pt-bold', sans-serif
+  font-size: rem(15px)
+  color: $text-color
   transition: all .25s
-  border-radius: 5px
-  background: transparent
-  border: none
+  border: 1px solid #bfbebe
+  &--filters
+    font-family: 'pt-regular', sans-serif
+    font-size: rem(13px)
+    color: #bfbebe
+  &:hover, &--active
+    color: #fff
+    background-color: $accent-color
+    border-color: $accent-color
+    text-decoration: none
 input[type="submit"].btn, button.btn
   padding-top: 0

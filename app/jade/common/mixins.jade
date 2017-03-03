@@ -3,3 +3,12 @@ mixin icon(name, mod)
   -mod = mod || ''
   svg(class="icon icon-" + name + ' ' + mod)
     use(xlink:href="img/svg/sprite.svg#" + name)
+
+//- Mixin for the portfolio item
+mixin portfolio(title, img_url, category)
+  div(class="col-md-3 col-sm-4 col-xs-6 mix " + category)
+    .portfolio__item
+      a(href="#").portfolio__link
+        .portfolio__info 
+          span= title
+        img(src="" + img_url, alt="")
