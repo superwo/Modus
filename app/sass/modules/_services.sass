@@ -1,0 +1,55 @@
+.services
+  background: linear-gradient(to right, #e7e6e6 0%,#e7e6e6 80%,#ffffff 80%,#ffffff 100%)
+  padding: rem(20px) 0 rem(60px)
+  position: relative
+
+  &__text
+    display: none
+    // margin-bottom: 50px
+    min-height: 100px
+    &--current
+      display: block
+
+  &__item
+    &--current
+      .services__link
+        color: $accent-color
+        .icon
+          fill: $accent-color
+  &__link
+    color: $text-color
+    display: block
+    font-family: 'pt-regular', sans-serif
+    font-size: rem(15px)
+    transition: all 200ms
+    &:focus
+      text-decoration: none
+    &:hover
+      color: $accent-color
+      text-decoration: none
+      .icon
+        fill: $accent-color
+
+    .icon
+      font-size: 1.3rem
+      margin-right: 12px
+      fill: #444
+
+  &__header
+    position: absolute
+    top: - rem(20px)
+    right: 0
+    width: 100%
+
+    .section-title
+      right: rem(15px)
+      left: auto
+      // top: -5rem
+
+  &__image
+    margin-right: 35px
+    position: relative
+    z-index: 8
+    img
+      width: 100%
+      height: auto
