@@ -1,0 +1,64 @@
+.mainfooter
+  &__top-line
+    height: rem(100px)
+    background-color: #f3f2f2
+  &__top-titles
+    background-color: #efefef
+    border-top: 1px solid #e3e3e3
+    border-bottom: 1px solid #e3e3e3
+
+  &__title
+    font-family: 'pt-regular', sans-serif
+    font-size: rem(15px)
+    line-height: rem(22px)
+    text-transform: uppercase
+    color: #4c4c4c
+    margin: 8px 0
+    line-height: 1
+  &__top
+    padding-top: rem(35px)
+    background-color: #efefef
+    font-size: rem(15px)
+    font-family: 'pt-regular', sans-serif
+    color: #6f6f6f
+
+  &__list
+    &-item
+      position: relative
+      padding-left: rem(15px)
+      &:hover
+        &::before
+          background-color: $accent-color
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        +size(4px)
+        background-color: #b9b9b9
+
+    &-link
+      display: block
+      color: #6f6f6f
+      &:hover, &:focus
+        color: $accent-color
+        text-decoration: none
+
+  &__contact
+    display: block
+  &__map
+    max-width: 100%
+
+  &__bottom
+    background-color: #fff
+    &-inner
+      display: flex
+      align-items: center
+      .btn
+        margin-left: auto
+
+  &__copy
+    font-family: 'pr-regular', sans-serif
+    font-size: rem(13px)
+    color: #bfbebe

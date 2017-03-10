@@ -1,2 +1,43 @@
 footer.mainfooter
-  p footer
+  .mainfooter__top-line
+  .mainfooter__top-titles
+    .container
+      .row
+        .col-md-3
+          h4.mainfooter__title Navigation
+        .col-md-3
+          h4.mainfooter__title Information
+        .col-md-3
+          h4.mainfooter__title Contact
+        .col-md-3
+          h4.mainfooter__title Maps
+  .mainfooter__top
+    .container
+      .row
+        .col-md-3
+          ul.mainfooter__list
+            each item in ['Happy Clients', 'Portfolio', 'Blogs', 'Contact Us']
+              li.mainfooter__list-item
+                a(href="#").mainfooter__list-link= item
+        .col-md-3
+          ul.mainfooter__list
+            each item in ['About Us', 'Delivery Information', 'Privacy Policy', 'Terms & Condition']
+              li.mainfooter__list-item
+                a(href="#").mainfooter__list-link= item
+        .col-md-3
+          span.mainfooter__contact A: 48/16 Royal lok, Anita, USA
+          span.mainfooter__contact T: (84) 169. 275. 9059
+          span.mainfooter__contact E: Cavoicat@gmail.com
+          span.mainfooter__contact Y!: cavoicat@yahoo.com
+        .col-md-3
+          img(src="img/image3.jpg", alt="map").mainfooter__map
+    
+  .mainfooter__bottom
+    .container
+      .mainfooter__bottom-inner
+        .logo
+          img(src="img/logo.png", alt="Logo")
+        .mainfooter__copy Copyright © 2017. All rights reseved
+        a(href="#").btn.btn--square
+          span
+            +icon('arrow-up')
