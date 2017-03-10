@@ -1,16 +1,48 @@
 section.team
   .container
     .row
-      .team__photo
-        img(src="img/team/team3.jpg", alt="team3")
+      .team__photo(style="background-image: url('img/team/team3.jpg');")
       .col-md-7.col-md-push-2
         .row
           .col-sm-12
             .team__caption meet our team
           .col-sm-12.team__info
-            .team__name Dam Van
-            .team__job Co Founder
-            p.team__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.
-
+            .team__info-wrap.current
+              .team__name Dam Van
+              .team__job Co Founder
+              p.team__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.
+              .team__contacts-wrap
+                a(href="#").team__contacts <span>Phone:</span> (84) 169 275. 9059
+                a(href="#").team__contacts <span>Email:</span> Cavoicat@gmail.com 
+            .team__info-wrap
+              .team__name Ben Larry
+              .team__job Photographer
+              p.team__desc Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.
+              .team__contacts-wrap
+                a(href="#").team__contacts <span>Phone:</span> (84) 169 275. 2015
+                a(href="#").team__contacts <span>Email:</span> Cavoicat@gmail.com 
+            .team__info-wrap
+              .team__name Mia Loren
+              .team__job Manager
+              p.team__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.
+              .team__contacts-wrap
+                a(href="#").team__contacts <span>Phone:</span> (84) 169 275. 9059
+                a(href="#").team__contacts <span>Email:</span> Cavoicat@gmail.com 
+            ul.team__members
+              li.team__member
+                a(href="#").active
+                  img(src="img/team/team3.jpg", alt="team3")
+              li.team__member
+                a(href="#")
+                  img(src="img/team/team2.jpg", alt="team2")
+              li.team__member
+                a(href="#")
+                  img(src="img/team/team1.jpg", alt="team1")
+            
+            .btn-wrap
+              span View All
+              a(href="#").btn.btn--square
+                span
+                  +icon('darrow-right')
 
           

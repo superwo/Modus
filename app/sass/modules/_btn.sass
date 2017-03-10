@@ -19,5 +19,35 @@
     background-color: $accent-color
     border-color: $accent-color
     text-decoration: none
+  &--square
+    +size(35px)
+    background-color: $accent-color
+    color: #fff
+    position: relative
+    border-color: $accent-color
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+      span
+        transform: scale(1)
+    span
+      transform: scale(0.8)
+      transition: transform 200ms
+      height: 28px
+    .icon
+      font-size: 28px
 input[type="submit"].btn, button.btn
   padding-top: 0
+
+.btn-wrap
+  position: absolute
+  bottom: 0
+  right: 0
+  display: flex
+  align-items: center
+  > span
+    margin-right: 5px
+    font-family: 'pt-regular', sans-serif
+    font-size: rem(13px)
+    color: #acadac

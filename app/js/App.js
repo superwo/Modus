@@ -10448,6 +10448,11 @@ var Services = function () {
     this.items = (0, _jquery2.default)('.services__item');
     this.info = (0, _jquery2.default)('.services__text');
 
+    // team information
+    this.teamLinks = (0, _jquery2.default)('.team__member a');
+    this.teamInfoWrap = (0, _jquery2.default)('.team__info-wrap');
+    this.teamImage = (0, _jquery2.default)('.team__photo');
+
     this.events();
   }
 
@@ -10455,6 +10460,7 @@ var Services = function () {
     key: 'events',
     value: function events() {
       this.links.on('click', this.showText.bind(this));
+      this.teamLinks.on('click', this.showTeamInfo.bind(this));
     }
 
     // custom functions
@@ -10469,6 +10475,19 @@ var Services = function () {
       this.info.hide();
       (0, _jquery2.default)(this.items[ind]).addClass('services__item--current');
       (0, _jquery2.default)(this.info[ind]).fadeIn();
+    }
+  }, {
+    key: 'showTeamInfo',
+    value: function showTeamInfo(e) {
+      e.preventDefault();
+      var ind = (0, _jquery2.default)(this.teamLinks).index(e.currentTarget);
+      var image = (0, _jquery2.default)(e.currentTarget).find('img').attr('src');
+      this.teamInfoWrap.removeClass('current');
+      this.teamInfoWrap.hide();
+      this.teamLinks.removeClass('active');
+      (0, _jquery2.default)(this.teamLinks[ind]).addClass('active');
+      (0, _jquery2.default)(this.teamInfoWrap[ind]).fadeIn();
+      this.teamImage.attr('style', 'background-image: url(\'' + image + '\');');
     }
   }]);
 
