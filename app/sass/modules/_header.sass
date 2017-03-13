@@ -4,6 +4,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
 
 .logo
   img
@@ -17,3 +18,11 @@
     float: left
   &__right
     float: right
+.contacts
+  &__item
+    &:first-child
+      margin-right: rem(20px)
+
+  +phones-max
+    .contacts__link-text
+      display: none

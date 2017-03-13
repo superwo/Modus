@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10311,7 +10311,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _slickCarousel = __webpack_require__(8);
+var _slickCarousel = __webpack_require__(9);
 
 var _slickCarousel2 = _interopRequireDefault(_slickCarousel);
 
@@ -10375,7 +10375,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _mixitup = __webpack_require__(7);
+var _mixitup = __webpack_require__(8);
 
 var _mixitup2 = _interopRequireDefault(_mixitup);
 
@@ -10420,6 +10420,60 @@ exports.default = Mixitup;
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var NavigationToggle = function () {
+  function NavigationToggle() {
+    _classCallCheck(this, NavigationToggle);
+
+    // cache elements from page
+    this.toggleNav = (0, _jquery2.default)('.btn--navigation-toggle');
+    this.mainNav = (0, _jquery2.default)('.main-nav');
+
+    this.events();
+  }
+
+  _createClass(NavigationToggle, [{
+    key: 'events',
+    value: function events() {
+      this.toggleNav.on('click', this.toggleNavigation.bind(this));
+    }
+
+    // custom functions
+
+  }, {
+    key: 'toggleNavigation',
+    value: function toggleNavigation(e) {
+      e.preventDefault();
+      (0, _jquery2.default)(e.currentTarget).toggleClass('on');
+      this.mainNav.slideToggle();
+    }
+  }]);
+
+  return NavigationToggle;
+}();
+
+exports.default = NavigationToggle;
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10497,7 +10551,7 @@ var Services = function () {
 exports.default = Services;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10555,7 +10609,7 @@ var StickFooter = function () {
 exports.default = StickFooter;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10606,7 +10660,7 @@ var TestModule = function () {
 exports.default = TestModule;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**!
@@ -21090,7 +21144,7 @@ exports.default = TestModule;
 })(window);
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -23991,17 +24045,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _TestModule = __webpack_require__(6);
+var _TestModule = __webpack_require__(7);
 
 var _TestModule2 = _interopRequireDefault(_TestModule);
 
-var _StickFooter = __webpack_require__(5);
+var _StickFooter = __webpack_require__(6);
 
 var _StickFooter2 = _interopRequireDefault(_StickFooter);
 
@@ -24013,9 +24067,13 @@ var _Mixitup = __webpack_require__(3);
 
 var _Mixitup2 = _interopRequireDefault(_Mixitup);
 
-var _Services = __webpack_require__(4);
+var _Services = __webpack_require__(5);
 
 var _Services2 = _interopRequireDefault(_Services);
+
+var _NavigationToggle = __webpack_require__(4);
+
+var _NavigationToggle2 = _interopRequireDefault(_NavigationToggle);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24024,6 +24082,7 @@ var stickFooter = new _StickFooter2.default();
 var carousel = new _Carousel2.default();
 var mixitup = new _Mixitup2.default();
 var services = new _Services2.default();
+var navigationToggle = new _NavigationToggle2.default();
 
 /***/ })
 /******/ ]);

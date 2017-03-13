@@ -17,19 +17,22 @@ header.mainheader
           li.contacts__item
             a(href="#").contacts__link
               +icon('phone')
-              | + (84). 169. 275. 9059
+              span.contacts__link-text + (84). 169. 275. 9059
           li.contacts__item
             a(href="#").contacts__link
               +icon('mail')
-              | cavoicat@gmail.com
+              span.contacts__link-text cavoicat@gmail.com
   .container
     .mainheader__inner
       .logo
         img(src="img/logo.png", alt="Logo")
+      a(href="#").btn--navigation-toggle
+        span
       ul.main-nav
         each item in ["l'azienda", 'Settori', 'opere principali', 'qualita', 'contatti']
           li.main-nav__item
             a(href="#").main-nav__link= item
+
   .banner
     .container
       ul.banner__list
