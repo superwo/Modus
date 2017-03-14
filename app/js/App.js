@@ -10446,6 +10446,8 @@ var NavigationToggle = function () {
     // cache elements from page
     this.toggleNav = (0, _jquery2.default)('.btn--navigation-toggle');
     this.mainNav = (0, _jquery2.default)('.main-nav');
+    this.wind = (0, _jquery2.default)(window);
+    this.main_content = (0, _jquery2.default)('.maincontent');
 
     this.events();
   }
@@ -10453,7 +10455,16 @@ var NavigationToggle = function () {
   _createClass(NavigationToggle, [{
     key: 'events',
     value: function events() {
+      var _this = this;
+
       this.toggleNav.on('click', this.toggleNavigation.bind(this));
+      this.wind.on('resize', function () {
+        _this.mainNav.attr('style', '');
+
+        if (_this.toggleNav.hasClass('on')) {
+          _this.toggleNav.removeClass('on');
+        }
+      });
     }
 
     // custom functions
@@ -10461,9 +10472,21 @@ var NavigationToggle = function () {
   }, {
     key: 'toggleNavigation',
     value: function toggleNavigation(e) {
+      var _this2 = this;
+
       e.preventDefault();
       (0, _jquery2.default)(e.currentTarget).toggleClass('on');
-      this.mainNav.slideToggle();
+      this.mainNav.slideToggle(200, function () {
+        return _this2.hf();
+      });
+    }
+  }, {
+    key: 'hf',
+    value: function hf() {
+      var h_header = (0, _jquery2.default)('.mainheader').height();
+      this.main_content.css({
+        'paddingTop': h_header
+      });
     }
   }]);
 

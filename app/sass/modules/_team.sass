@@ -12,6 +12,8 @@
     background-size: cover
     z-index: 5
     transition: all 200ms
+    +desktop-max
+      left: -35px
 
   &__caption
     font-family: 'impact', sans-serif
@@ -21,6 +23,8 @@
     text-align: center
     color: #f0f0f0
     line-height: 1
+    +desktop-max
+      font-size: 3rem
   &__info
     background-color: #e7e6e6
     padding-top: rem(16px)
@@ -44,6 +48,8 @@
 
   &__contacts-wrap
     text-align: right
+    +phones-max
+      margin-bottom: rem(30px)
   &__contacts
     font-family: 'pt-italic', sans-serif
     font-size: rem(13px)
