@@ -10657,7 +10657,7 @@ var TestModule = function () {
     _classCallCheck(this, TestModule);
 
     // cache elements from page
-    this.titles = (0, _jquery2.default)('h1');
+    this.preloader = (0, _jquery2.default)('.preloader');
 
     this.events();
   }
@@ -10665,15 +10665,11 @@ var TestModule = function () {
   _createClass(TestModule, [{
     key: 'events',
     value: function events() {
-      this.titles.on('click', this.logSomething);
-    }
+      var _this = this;
 
-    // custom functions
-
-  }, {
-    key: 'logSomething',
-    value: function logSomething() {
-      console.log("You clicked me!");
+      (0, _jquery2.default)(document).ready(function () {
+        return _this.preloader.fadeOut();
+      });
     }
   }]);
 
