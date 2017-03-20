@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "jquery": "^3.1.1",
+    "magnific-popup": "^1.1.0",
     "mixitup": "^3.1.7",
     "slick-carousel": "^1.6.0"
   }

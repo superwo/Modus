@@ -29,9 +29,9 @@ header.mainheader
       a(href="#").btn--navigation-toggle
         span
       ul.main-nav
-        each item in ["l'azienda", 'Settori', 'opere principali', 'qualita', 'contatti']
+        each item, key in {"l'azienda": '/', 'Settori': '', 'opere principali': 'portfolio.html', 'qualita': '', 'contatti': ''}
           li.main-nav__item
-            a(href="#").main-nav__link= item
+            a(href= item).main-nav__link= key
 
   .banner
     .container

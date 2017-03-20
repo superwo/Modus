@@ -13,26 +13,27 @@ class NavigationToggle {
 
   events() {
     this.toggleNav.on('click', this.toggleNavigation.bind(this));
-    this.wind.on('resize', () => {
-      this.mainNav.attr('style', '');
-
-      if(this.toggleNav.hasClass('on')){
-        this.toggleNav.removeClass('on');
-      }
-    });
+    // this.wind.on('resize', () => {
+    //   this.mainNav.attr('style', '');
+    //
+    //   if(this.toggleNav.hasClass('on')){
+    //     this.toggleNav.removeClass('on');
+    //   }
+    // });
   }
 
   // custom functions
   toggleNavigation(e) {
     e.preventDefault();
     $(e.currentTarget).toggleClass('on');
+
     this.mainNav.slideToggle(200, () => this.hf());
   }
   hf() {
-    var h_header = $('.mainheader').height();
-    this.main_content.css({
-      'paddingTop': h_header
-    });
+    if(this.mainNav.css('display') === 'none') {
+      this.mainNav.removeAttr('style');
+    }
+    
   }
 }
 

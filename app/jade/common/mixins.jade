@@ -5,10 +5,14 @@ mixin icon(name, mod)
     use(xlink:href="img/svg/sprite.svg#" + name)
 
 //- Mixin for the portfolio item
-mixin portfolio(title, img_url, category)
+mixin portfolio(title, text, img_urls, category)
   div(class="col-md-3 col-sm-4 col-xs-6 mix " + category)
     .portfolio__item
       a(href="#").portfolio__link
         .portfolio__info 
           span= title
-        img(src="" + img_url, alt="")
+        img(src="" + img_urls[0], alt="")
+        
+        .portfolio__item-descr
+          h4= title
+          p= text
