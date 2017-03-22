@@ -11,8 +11,11 @@ mixin portfolio(title, text, img_urls, category)
       a(href="#").portfolio__link
         .portfolio__info 
           span= title
-        img(src="" + img_urls[0], alt="")
+        img(src="" + img_urls[0], alt="").portfolio__img
         
         .portfolio__item-descr
+          .portfolio__img-box
+            each ln in img_urls
+              img(src="" + ln, alt="").gallery-item
           h4= title
           p= text

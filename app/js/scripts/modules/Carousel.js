@@ -13,6 +13,7 @@ class Carousel {
       autoplaySpeed: 6000
     });
 
+
     this.events();
   }
 

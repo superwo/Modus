@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import magnificPopup from 'magnific-popup';
+import slick from 'slick-carousel';
 
 class Popup {
   constructor() {
@@ -7,6 +8,8 @@ class Popup {
     this.imgs = $('.portfolio__cert-link');
 
     this.portfolioItemsLink = $('.portfolio__link');
+
+    this.portfolioItemsBox = $('.portfolio__img-box');
 
     this.events();
   }
@@ -20,6 +23,9 @@ class Popup {
     this.portfolioItemsLink.magnificPopup({
       type: 'inline'
     });
+
+    this.portfolioItemsLink.on('mfpOpen', this.setTheCarousel.bind(this));
+    this.portfolioItemsLink.on('mfpClose', this.destroyTheCarousel.bind(this));
   }
 
   // custom functions
@@ -29,10 +35,20 @@ class Popup {
       .find('.portfolio__item-descr')
         .attr('id', 'portfolio-img-' +e);
   }
-  // showPopup(e) {
-  //   e.preventDefault();
-  //   console.log(e.currentTarget);
-  // }
+
+  setTheCarousel() {
+    this.portfolioItemsBox.slick({
+      dots: false,
+      speed: 600,
+      arrows: true,
+      slidesToShow: 1,
+      lazyLoad: "ondemand"
+    });
+  }
+
+  destroyTheCarousel() {
+    this.portfolioItemsBox.slick("unslick");
+  }
 }
 
 export default Popup;
