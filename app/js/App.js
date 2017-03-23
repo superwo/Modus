@@ -13231,6 +13231,7 @@ var Carousel = function () {
       speed: 600,
       arrows: false,
       autoplay: true,
+      // fade: true,
       autoplaySpeed: 6000
     });
 
@@ -13291,7 +13292,10 @@ var Mixitup = function () {
     // cache elements from page
     this.links = (0, _jquery2.default)('.portfolio__filters-item a');
     this.mixer = (0, _jquery2.default)('.portfolio__list');
-    (0, _mixitup2.default)(this.mixer);
+
+    if (this.mixer.length) {
+      (0, _mixitup2.default)(this.mixer);
+    }
     this.events();
   }
 
@@ -13440,17 +13444,22 @@ var Popup = function () {
   _createClass(Popup, [{
     key: 'events',
     value: function events() {
-      this.imgs.magnificPopup({
-        type: 'image',
-        mainClass: 'mfp-fade'
-      });
-      this.portfolioItemsLink.each(this.setId);
-      this.portfolioItemsLink.magnificPopup({
-        type: 'inline'
-      });
+      if (this.imgs.length) {
+        this.imgs.magnificPopup({
+          type: 'image',
+          mainClass: 'mfp-fade'
+        });
+      }
 
-      this.portfolioItemsLink.on('mfpOpen', this.setTheCarousel.bind(this));
-      this.portfolioItemsLink.on('mfpClose', this.destroyTheCarousel.bind(this));
+      if (this.portfolioItemsLink.length) {
+        this.portfolioItemsLink.each(this.setId);
+        this.portfolioItemsLink.magnificPopup({
+          type: 'inline'
+        });
+
+        this.portfolioItemsLink.on('mfpOpen', this.setTheCarousel.bind(this));
+        this.portfolioItemsLink.on('mfpClose', this.destroyTheCarousel.bind(this));
+      }
     }
 
     // custom functions
@@ -13465,9 +13474,9 @@ var Popup = function () {
     key: 'setTheCarousel',
     value: function setTheCarousel() {
       this.portfolioItemsBox.slick({
-        dots: false,
+        dots: true,
         speed: 600,
-        arrows: true,
+        arrows: false,
         slidesToShow: 1,
         lazyLoad: "ondemand"
       });
@@ -26058,10 +26067,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var testModule = new _TestModule2.default();
 var stickFooter = new _StickFooter2.default();
+var navigationToggle = new _NavigationToggle2.default();
 var carousel = new _Carousel2.default();
 var mixitup = new _Mixitup2.default();
 var services = new _Services2.default();
-var navigationToggle = new _NavigationToggle2.default();
 var popup = new _Popup2.default();
 
 /***/ })

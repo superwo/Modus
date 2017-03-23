@@ -7,7 +7,10 @@ class Mixitup {
     // cache elements from page
     this.links = $('.portfolio__filters-item a');
     this.mixer = $('.portfolio__list');
-    mixitup(this.mixer);
+
+    if(this.mixer.length){
+      mixitup(this.mixer);
+    }
     this.events();
   }
 

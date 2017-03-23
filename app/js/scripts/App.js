@@ -8,8 +8,8 @@ import Popup from './modules/Popup';
 
 var testModule = new TestModule();
 var stickFooter = new StickFooter();
+var navigationToggle = new NavigationToggle();
 var carousel = new Carousel();
 var mixitup = new Mixitup();
 var services = new Services();
-var navigationToggle = new NavigationToggle();
 var popup = new Popup();

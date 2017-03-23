@@ -10,6 +10,7 @@ class Carousel {
       speed: 600,
       arrows: false,
       autoplay: true,
+      // fade: true,
       autoplaySpeed: 6000
     });
 

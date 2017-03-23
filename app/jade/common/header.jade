@@ -29,16 +29,20 @@ header.mainheader
       a(href="#").btn--navigation-toggle
         span
       ul.main-nav
-        each item, key in {"l'azienda": '/', 'Settori': '', 'opere principali': 'portfolio.html', 'qualita': '', 'contatti': ''}
+        each item, key in {"l'azienda": 'info.html', 'opere principali': '#portfolio',  'Settori': '#settori', 'qualita': '#certs', 'contatti': ''}
           li.main-nav__item
             a(href= item).main-nav__link= key
 
   .banner
     .container
       ul.banner__list
-        each item in [1, 2]
-          li.banner__item
-            a(href="#").banner__link
-              .banner__info
-                span.banner__title autostrada a4 - 
-                span.banner__description.hidden-xs Strada provinciale nr 46 (ex SS46) del Pasubio 
+        li.banner__item
+          a(href="#", style="background-image: url(../img/foto/demo.jpg);").banner__link
+            .banner__info
+              span.banner__title autostrada a4 - 
+              span.banner__description.hidden-xs Strada provinciale nr 46 (ex SS46) del Pasubio 
+        li.banner__item
+          a(href="#", style="background-image: url(../img/foto/sp5_5.jpg);").banner__link
+            .banner__info
+              span.banner__title Some dummy content a4 
+              span.banner__description.hidden-xs Strada provinciale nr 46 (ex SS46) del Pasubio 

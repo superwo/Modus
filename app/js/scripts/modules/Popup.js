@@ -15,17 +15,22 @@ class Popup {
   }
 
   events() {
-    this.imgs.magnificPopup({
-      type:'image',
-      mainClass: 'mfp-fade'
-    });
-    this.portfolioItemsLink.each(this.setId);
-    this.portfolioItemsLink.magnificPopup({
-      type: 'inline'
-    });
+    if(this.imgs.length) {
+      this.imgs.magnificPopup({
+        type:'image',
+        mainClass: 'mfp-fade'
+      });
+    }
 
-    this.portfolioItemsLink.on('mfpOpen', this.setTheCarousel.bind(this));
-    this.portfolioItemsLink.on('mfpClose', this.destroyTheCarousel.bind(this));
+    if(this.portfolioItemsLink.length) {
+      this.portfolioItemsLink.each(this.setId);
+      this.portfolioItemsLink.magnificPopup({
+        type: 'inline'
+      });
+
+      this.portfolioItemsLink.on('mfpOpen', this.setTheCarousel.bind(this));
+      this.portfolioItemsLink.on('mfpClose', this.destroyTheCarousel.bind(this));
+    }
   }
 
   // custom functions
@@ -38,9 +43,9 @@ class Popup {
 
   setTheCarousel() {
     this.portfolioItemsBox.slick({
-      dots: false,
+      dots: true,
       speed: 600,
-      arrows: true,
+      arrows: false,
       slidesToShow: 1,
       lazyLoad: "ondemand"
     });
