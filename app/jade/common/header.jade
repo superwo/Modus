@@ -25,11 +25,12 @@ header.mainheader
   .container
     .mainheader__inner
       .logo
-        img(src="img/logo.png", alt="Logo")
+        a(href="/")
+          img(src="img/logo.png", alt="Logo")
       a(href="#").btn--navigation-toggle
         span
       ul.main-nav
-        each item, key in {"l'azienda": 'info.html', 'opere principali': '#portfolio',  'Settori': '#settori', 'qualita': '#certs', 'contatti': ''}
+        each item, key in {"l'azienda": 'info.html', 'opere principali': 'portfolio.html',  'Settori': '#settori', 'qualita': '#certs', 'contatti': ''}
           li.main-nav__item
             a(href= item).main-nav__link= key
 

@@ -53,9 +53,9 @@
   &__info
     background-color: rgba($main-color, 0.8)
     position: absolute
-    +size(90%)
-    top: 5%
-    left: 5%
+    +size(100%)
+    // top: 5%
+    // left: 5%
     transform: scale(0)
     font-size: rem(14px)
     padding: 15px
@@ -64,12 +64,29 @@
     align-items: center
     opacity: 0
     transition: all .3s ease-out
-    // span
-    //   position: relative
-    //   display: inline-block
-    //   top: 50%
-    //   left: 50%
-    //   transform: translate(-50%, -50%)
+    span
+      display: block
+      +size(15px)
+      border: 2px solid $text-color
+      border-radius: 50%
+      position: absolute
+      top: 50%
+      left: 50%
+      transition: all 200ms
+      // opacity: 0
+      z-index: 5
+      transform: translate(-50%, -50%) scale(2)
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        right: -87%
+        width: 10px
+        height: 2px
+        transform: rotate(45deg)
+        transform-origin: 0 0
+        background-color: $text-color
 
   &__cert-img
     max-width: 100%

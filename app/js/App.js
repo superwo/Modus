@@ -13447,7 +13447,7 @@ var Popup = function () {
       if (this.imgs.length) {
         this.imgs.magnificPopup({
           type: 'image',
-          mainClass: 'mfp-fade'
+          fixedContentPos: false
         });
       }
 
