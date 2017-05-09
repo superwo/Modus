@@ -34,16 +34,11 @@ header.mainheader
           li.main-nav__item
             a(href= item).main-nav__link= key
 
-  .banner
+  .banner.banner--secondary
+  .breadcrumbs
     .container
-      ul.banner__list
-        li.banner__item
-          a(href="#", style="background-image: url(../img/foto/demo.jpg);").banner__link
-            .banner__info
-              span.banner__title autostrada a4 - 
-              span.banner__description.hidden-xs Strada provinciale nr 46 (ex SS46) del Pasubio 
-        li.banner__item
-          a(href="#", style="background-image: url(../img/foto/sp5_5.jpg);").banner__link
-            .banner__info
-              span.banner__title Some dummy content a4 
-              span.banner__description.hidden-xs Strada provinciale nr 46 (ex SS46) del Pasubio 
+      .row
+        .col-xs-12
+          a.breadcrumbs__link(href="#") Home
+          a.breadcrumbs__link(href="#") Portfolio
+          a.breadcrumbs__link.breadcrumbs__link--active(href="#") Portfolio-item

@@ -1,6 +1,22 @@
 .portfolio
+  .row
+    position: relative
+  .section-title
+    left: -8px
+    z-index: -1
+    +tablets-max
+      display: none
   text-align: center
   margin-bottom: rem(50px)
+  &__text
+    text-align: left
+    font-size: 14px
+    color: #7a7a7a
+    position: absolute
+    top: -50px
+    left: 150px
+    max-width: 700px
+
   &__title
   	font-family: $title-font
   	text-transform: uppercase
@@ -20,6 +36,8 @@
 
   &__filters
     margin-bottom: rem(20px)
+    &--right
+      text-align: right
     &-item
       display: inline-block
 
@@ -34,6 +52,9 @@
       position: relative
       .slick-dots
         background-color: rgba(#fff, 0.4)
+      .mfp-close
+        top: -5px
+        right: -5px
   &__link
     display: block
     height: 100%
@@ -67,7 +88,7 @@
     span
       display: block
       +size(15px)
-      border: 2px solid $accent-color
+      border: 2px solid #fff
       border-radius: 50%
       position: absolute
       top: 50%
@@ -86,7 +107,7 @@
         height: 2px
         transform: rotate(45deg)
         transform-origin: 0 0
-        background-color: $accent-color
+        background-color: #fff
 
   &__cert-img
     max-width: 100%

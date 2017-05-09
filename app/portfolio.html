@@ -63,7 +63,7 @@
           <div class="mainheader__inner">
             <div class="logo"><a href="/"><img src="img/logo.png" alt="Logo"></a></div><a class="btn--navigation-toggle" href="#"><span></span></a>
             <ul class="main-nav">
-              <li class="main-nav__item"><a class="main-nav__link" href="info.html">l'azienda</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="/">l'azienda</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="portfolio.html">opere principali</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#settori">Settori</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#certs">qualita</a></li>
@@ -71,14 +71,12 @@
             </ul>
           </div>
         </div>
-        <div class="banner">
+        <div class="banner banner--secondary"></div>
+        <div class="breadcrumbs">
           <div class="container">
-            <ul class="banner__list">
-              <li class="banner__item"><a class="banner__link" href="#" style="background-image: url(../img/foto/demo.jpg);">
-                  <div class="banner__info"><span class="banner__title">autostrada a4 - </span><span class="banner__description hidden-xs">Strada provinciale nr 46 (ex SS46) del Pasubio </span></div></a></li>
-              <li class="banner__item"><a class="banner__link" href="#" style="background-image: url(../img/foto/sp5_5.jpg);">
-                  <div class="banner__info"><span class="banner__title">Some dummy content a4 </span><span class="banner__description hidden-xs">Strada provinciale nr 46 (ex SS46) del Pasubio </span></div></a></li>
-            </ul>
+            <div class="row">
+              <div class="col-xs-12"><a class="breadcrumbs__link" href="#">Home</a><a class="breadcrumbs__link" href="#">Portfolio</a><a class="breadcrumbs__link breadcrumbs__link--active" href="#">Portfolio-item</a></div>
+            </div>
           </div>
         </div>
       </header>
@@ -86,15 +84,19 @@
         <div class="page">
           <section class="portfolio" id="portfolio">
             <div class="container">
-              <h2 class="portfolio__title">ALCUNE OPERE</h2><span class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. </span>
-              <ul class="portfolio__filters">
-                <li class="portfolio__filters-item"><a class="btn btn--filters btn--active" href="#" data-filter="all">Tutte</a></li>
-                <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".ferrovie">Ferrovie</a></li>
-                <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".strade">Strade</a></li>
-                <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".idraulica">Idraulica</a></li>
-              </ul>
+              <div class="row">
+                <div class="col-xs-12">
+                  <ul class="portfolio__filters portfolio__filters--right">
+                    <li class="portfolio__filters-item"><a class="btn btn--filters btn--active" href="#" data-filter="all">Tutte</a></li>
+                    <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".ferrovie">Ferrovie</a></li>
+                    <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".strade">Strade</a></li>
+                    <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".idraulica">Idraulica</a></li>
+                  </ul>
+                </div>
+              </div>
               <div class="portfolio__list">
                 <div class="row">
+                  <h1 class="section-title">Portfolio</h1><span class="portfolio__text">La S.te.p. ha maturato una decennale esperienza nel settore della progettazione di infrastrutture occupandosi prevalentemente della progettazione di strade e ferrovie.</span>
                   <div class="col-md-3 col-sm-4 col-xs-6 mix ferrovie">
                     <div class="portfolio__item"><a class="portfolio__link" href="#">
                         <div class="portfolio__info"> <span></span></div><img class="portfolio__img" src="img/lavori/c/c1.jpg" alt=""/>
@@ -175,7 +177,7 @@
                           <p></p>
                         </div></a></div>
                   </div>
-                </div><a class="btn" href="#">Vedi Tutte</a>
+                </div>
               </div>
             </div>
           </section>
@@ -222,7 +224,9 @@
                 </ul>
               </div>
               <div class="col-md-3 col-sm-6"><span class="mainfooter__contact">A: 48/16 Royal lok, Anita, USA</span><span class="mainfooter__contact">T: (84) 169. 275. 9059</span><span class="mainfooter__contact">E: Cavoicat@gmail.com</span><span class="mainfooter__contact">Y!: cavoicat@yahoo.com</span></div>
-              <div class="col-md-3 col-sm-6"><img class="mainfooter__map" src="img/image3.jpg" alt="map"></div>
+              <div class="col-md-3 col-sm-6">
+                <div class="mainfooter__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22396.166558890698!2d10.929670538215058!3d45.439159979100616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e19412eeca07%3A0x7ee44d4952200225!2sPiazza+Risorgimento%2C+17%2C+37139+Verona+VR%2C+Italy!5e0!3m2!1sen!2s!4v1493967568294" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+              </div>
             </div>
           </div>
         </div>

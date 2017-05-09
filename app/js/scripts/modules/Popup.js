@@ -10,7 +10,6 @@ class Popup {
     this.portfolioItemsLink = $('.portfolio__link');
 
     this.portfolioItemsBox = $('.portfolio__img-box');
-
     this.events();
   }
 

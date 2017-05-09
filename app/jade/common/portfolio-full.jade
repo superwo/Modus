@@ -1,19 +1,22 @@
 section.portfolio#portfolio
   .container
-    h2.portfolio__title ALCUNE OPERE
-    span.portfolio__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. 
-    ul.portfolio__filters
-      li.portfolio__filters-item
-        a(href="#", data-filter="all").btn.btn--filters.btn--active Tutte
-      li.portfolio__filters-item
-        a(href="#", data-filter=".ferrovie").btn.btn--filters Ferrovie
-      li.portfolio__filters-item
-        a(href="#", data-filter=".strade").btn.btn--filters Strade
-      li.portfolio__filters-item
-        a(href="#", data-filter=".idraulica").btn.btn--filters Idraulica
+    .row
+      .col-xs-12
+        ul.portfolio__filters.portfolio__filters--right
+          li.portfolio__filters-item
+            a(href="#", data-filter="all").btn.btn--filters.btn--active Tutte
+          li.portfolio__filters-item
+            a(href="#", data-filter=".ferrovie").btn.btn--filters Ferrovie
+          li.portfolio__filters-item
+            a(href="#", data-filter=".strade").btn.btn--filters Strade
+          li.portfolio__filters-item
+            a(href="#", data-filter=".idraulica").btn.btn--filters Idraulica
         
     .portfolio__list
       .row
+        h1.section-title Portfolio
+        span.portfolio__text La S.te.p. ha maturato una decennale esperienza nel settore della progettazione di infrastrutture occupandosi prevalentemente della progettazione di strade e ferrovie.
+        
         +portfolio('AUTOSTRADA A4 - Autostrada A31 Valdastico sud', 'Progetto costruttivo e di variante del lotto 15 n° 15 cavalcavia, 10 sottovia e 5km di bretella autostradale.', ['img/lavori/c/c1.jpg', 'img/lavori/c/c2.jpg', 'img/lavori/c/c3.jpg', 'img/lavori/c/c4.jpg'], 'ferrovie')
         +portfolio('Autostrade per l’Italia - Adeguamento del tratto di attraversamento appenninico tra Sasso Marconi e Barberino di Mugello - Lotto 5a', 'Progetto costruttivo e di variante delle viabilità di servizio e di cantiere comprese le opere d’arte per una estesa totale pari a circa 10 km.', ['img/lavori/l/lotto1.jpg', 'img/lavori/l/lotto2.jpg', 'img/lavori/l/lotto3.jpg', 'img/lavori/l/lotto4.jpg'], 'strade')
         +portfolio('Strada provinciale SP5...', '', ['img/lavori/masera_1.jpg'], 'idraulica')
@@ -23,4 +26,4 @@ section.portfolio#portfolio
         +portfolio('Strada provinciale SP5...', '', ['img/lavori/masera_1.jpg'], 'idraulica')
         +portfolio('Strada provinciale SP5...', '', ['img/lavori/sp5_5.jpg'], 'strade idraulica')
 
-      a(href="portfolio.html").btn Vedi Tutte
+      

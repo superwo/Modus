@@ -13437,7 +13437,6 @@ var Popup = function () {
     this.portfolioItemsLink = (0, _jquery2.default)('.portfolio__link');
 
     this.portfolioItemsBox = (0, _jquery2.default)('.portfolio__img-box');
-
     this.events();
   }
 
@@ -13666,7 +13665,7 @@ var TestModule = function () {
       var _this = this;
 
       (0, _jquery2.default)(document).ready(function () {
-        return _this.preloader.fadeOut();
+        return _this.preloader.delay(1000).fadeOut();
       });
     }
   }]);

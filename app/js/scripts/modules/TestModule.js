@@ -9,7 +9,7 @@ class TestModule {
   }
 
   events() {
-    $(document).ready(() => this.preloader.fadeOut());
+    $(document).ready(() => this.preloader.delay(1000).fadeOut());
 
   }
 
