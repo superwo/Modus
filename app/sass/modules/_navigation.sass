@@ -30,3 +30,21 @@
     .main-nav__item
       display: block
       text-align: center
+
+.pages-nav
+  &__item
+    display: inline-block
+    +size(35px)
+    background-color: #dad9d9
+    line-height: 35px
+    transition: all 200ms ease
+    &:hover
+      background-color: $accent-color
+    &--active
+      border-radius: 50%
+      background-color: $accent-color
+    a
+      display: block
+      height: 100%
+      text-decoration: none
+      color: #fff
