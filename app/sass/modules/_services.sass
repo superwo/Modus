@@ -5,9 +5,20 @@
   +laptop-max
     background: #e7e6e6
 
+  &--full
+    margin-top: 30px
+    padding: 3em 0
+    background: #e7e6e6
+    .services__list
+      margin-bottom: 30px
+      margin-top: 0
+
+
   &__text
     display: none
     // margin-bottom: 50px
+    font-size: 14px
+    color: $text-color
     min-height: 100px
     &--current
       display: block
@@ -25,6 +36,7 @@
     color: $text-color
     display: block
     font-family: 'pt-regular', sans-serif
+    color: #333
     font-size: rem(15px)
     transition: all 200ms
     &:focus
