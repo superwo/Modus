@@ -12,3 +12,31 @@
     text-transform: uppercase
     color: $accent-color
     font-size: rem(17px)
+
+  .contacts-wrap
+    margin: 50px 0
+    +clearfix
+    +tablets-max
+      margin-top: 100px
+
+  &__map
+    position: relative
+    margin-left: 22px
+    z-index: 10
+
+
+  &__contact
+    font-size: 14px
+    font-weight: 400
+    margin-top: 30px
+    margin-bottom: 18px
+
+    a
+      color: $text-color
+      .icon
+        fill: $accent-color
+        font-size: 1.5em
+        vertical-align: middle
+        margin-right: 20px
+      span
+        font-weight: 700

@@ -13656,6 +13656,8 @@ var TestModule = function () {
     // cache elements from page
     this.preloader = (0, _jquery2.default)('.preloader');
 
+    this.upButton = (0, _jquery2.default)('.mainfooter__bottom-inner .btn--square');
+
     this.events();
   }
 
@@ -13666,6 +13668,10 @@ var TestModule = function () {
 
       (0, _jquery2.default)(document).ready(function () {
         return _this.preloader.delay(1000).fadeOut();
+      });
+      this.upButton.on('click', function (ev) {
+        ev.preventDefault();
+        (0, _jquery2.default)('body').animate({ scrollTop: 0 }, '500');
       });
     }
   }]);

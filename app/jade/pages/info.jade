@@ -1,4 +1,4 @@
-extends ../layouts/main_layout.jade
+extends ../layouts/secondary_layout.jade
 
 block title
   title L'Azienda
@@ -21,3 +21,22 @@ prepend content
             p <strong>E</strong>‘ rilevante, a questo scopo, la capacità di aggregare professionalità specifiche, così da consentire l’offerta di un ampio ventaglio di prestazioni tecniche - dalla progettazione all’ingegneria di cantiere alle tecnologie informatiche - applicate sia a problematiche ricorrenti che a progetti innovativi di contenuto scientifico avanzato. 
     
             p <strong>P</strong>er questo motivo la società si propone, in chiave moderna ed elastica, alle amministrazioni, agli enti pubblici, alle imprese e in generale a tutti gli operatori dell’ingegneria civile, per offrire servizi di progettazione e consulenza nei diversi settori di investimento e produzione, particolarmente in quelli dell’idraulica, dei trasporti, dell’edilizia e dell’ambiente. 
+        .row
+          .contacts-wrap
+            .col-sm-8
+              h2.section-title Contatti
+              .about__map <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22396.166558890698!2d10.929670538215058!3d45.439159979100616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e19412eeca07%3A0x7ee44d4952200225!2sPiazza+Risorgimento%2C+17%2C+37139+Verona+VR%2C+Italy!5e0!3m2!1sen!2s!4v1493967568294" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            .col-sm-4
+              ul.about__contacts
+                li.about__contact
+                  a(href="tel:0458905229")
+                    +icon('phone') 
+                    | <span>Tel:</span> 045-8905229
+                li.about__contact
+                  a(href="fax:0458905339") 
+                    +icon('paper-plane')
+                    | <span>Fax:</span> 045-8905339
+                li.about__contact
+                  a(href="mailto:segreteria@stepverona.it") 
+                    +icon('mail')
+                    | <span>e-mail:</span> segreteria@stepverona.it
