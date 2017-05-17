@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
   del    = require('del');
 
-gulp.task('build', ['removedist', 'jade', 'imagemin', 'sass', 'scripts'], function() {
+gulp.task('build', ['removedist', 'jade', 'sass', 'scripts'], function() {
 
 	var buildFiles = gulp.src([
 		'app/*.html',

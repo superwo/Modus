@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
+    <title>S.TE.P.</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -66,36 +66,53 @@
               <li class="main-nav__item"><a class="main-nav__link" href="/">l'azienda</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="portfolio.html">opere principali</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="settori.html">Settori</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#certs">qualita</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="info.html">contatti</a></li>
             </ul>
           </div>
         </div>
-        <div class="banner banner--secondary"></div>
-        <div class="breadcrumbs">
+        <div class="banner">
           <div class="container">
-            <div class="row">
-              <div class="col-xs-12"><a class="breadcrumbs__link" href="#">Home</a><a class="breadcrumbs__link" href="#">Portfolio</a><a class="breadcrumbs__link breadcrumbs__link--active" href="#">Portfolio-item</a></div>
-            </div>
+            <ul class="banner__list">
+              <li class="banner__item"><a class="banner__link" href="#" style="background-image: url(../img/foto/demo.jpg);">
+                  <div class="banner__info"><span class="banner__title">autostrada a4 - </span><span class="banner__description hidden-xs">Strada provinciale nr 46 (ex SS46) del Pasubio </span></div></a></li>
+              <li class="banner__item"><a class="banner__link" href="#" style="background-image: url(../img/foto/sp5_5.jpg);">
+                  <div class="banner__info"><span class="banner__title">Some dummy content a4 </span><span class="banner__description hidden-xs">Strada provinciale nr 46 (ex SS46) del Pasubio </span></div></a></li>
+            </ul>
           </div>
         </div>
       </header>
       <main class="maincontent"> 
         <div class="page">
-          <section class="portfolio" id="portfolio">
+          <section class="about" id="about">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12">
-                  <ul class="portfolio__filters portfolio__filters--right">
-                    <li class="portfolio__filters-item"><a class="btn btn--filters btn--active" href="#" data-filter="all">Tutte</a></li>
-                    <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".ferrovie">Ferrovie</a></li>
-                    <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".strade">Strade</a></li>
-                    <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".idraulica">Idraulica</a></li>
-                  </ul>
+                <div class="col-sm-5 hidden-xs">
+                  <h2 class="section-title">S.TE.P.</h2>
+                  <div class="about__image"><img src="img/foto/2.jpg" alt="about"></div>
+                </div>
+                <div class="col-sm-7">
+                  <h1 class="section-subtitle" data-mfp-src="#about-text">L'azienda</h1>
+                  <p>S.TE.P. Servizi, Tecnologie e Progetti S.r.l., è una società di progettazione e di servizi per l'ingegneria con sedi operative in Roma e Verona, operante in tutti i campi dell’ingegneria civile, strutturale,  infrastrutturale, impiantistica, ambientale e nelle valutazioni tecnico-economiche degli investimenti, che basa la propria attività sulle qualifiche professionali e sull’esperienza delle sue componenti umane.</p>
+                  <div class="btn-wrap"><span class="about__more">PERCHÉ Noi</span><a class="btn btn--square" href="info.html"><span>
+                        <svg class="icon icon-arrow-right ">
+                          <use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+                        </svg></span></a></div>
                 </div>
               </div>
+            </div>
+          </section>
+          <section class="portfolio" id="portfolio">
+            <div class="container">
+              <h2 class="portfolio__title">ALCUNE OPERE</h2><span class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. </span>
+              <ul class="portfolio__filters">
+                <li class="portfolio__filters-item"><a class="btn btn--filters btn--active" href="#" data-filter="all">Tutte</a></li>
+                <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".ferrovie">Ferrovie</a></li>
+                <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".strade">Strade</a></li>
+                <li class="portfolio__filters-item"><a class="btn btn--filters" href="#" data-filter=".idraulica">Idraulica</a></li>
+              </ul>
               <div class="portfolio__list">
                 <div class="row">
-                  <h1 class="section-title">Portfolio</h1><span class="portfolio__text">La S.te.p. ha maturato una decennale esperienza nel settore della progettazione di infrastrutture occupandosi prevalentemente della progettazione di strade e ferrovie.</span>
                   <div class="col-md-3 col-sm-4 col-xs-6 mix ferrovie">
                     <div class="portfolio__item"><a class="portfolio__link" href="#">
                         <div class="portfolio__info"> <span></span></div><img class="portfolio__img" src="img/lavori/c/c1.jpg" alt=""/>
@@ -176,58 +193,111 @@
                           <p></p>
                         </div></a></div>
                   </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 mix strade">
-                    <div class="portfolio__item"><a class="portfolio__link" href="#">
-                        <div class="portfolio__info"> <span></span></div><img class="portfolio__img" src="img/lavori/l/lotto1.jpg" alt=""/>
-                        <div class="portfolio__item-descr">
-                          <div class="portfolio__img-box"><img class="gallery-item" src="img/lavori/l/lotto1.jpg" alt=""/><img class="gallery-item" src="img/lavori/l/lotto2.jpg" alt=""/><img class="gallery-item" src="img/lavori/l/lotto3.jpg" alt=""/><img class="gallery-item" src="img/lavori/l/lotto4.jpg" alt=""/>
-                          </div>
-                          <h4>Autostrade per l’Italia - Adeguamento del tratto di attraversamento appenninico tra Sasso Marconi e Barberino di Mugello - Lotto 5a</h4>
-                          <p>Progetto costruttivo e di variante delle viabilità di servizio e di cantiere comprese le opere d’arte per una estesa totale pari a circa 10 km.</p>
-                        </div></a></div>
+                </div><a class="btn" href="portfolio.html">Vedi Tutte</a>
+              </div>
+            </div>
+          </section>
+          <section class="services" id="settori">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9">
+                  <p class="services__text services__text--current">Studi generali di viabilità. Tracciamento assi stradali e svincoli. Opere civili del corpo stradale. Opere d’arte maggiori (gallerie naturali e artificiali, viadotti, cavalcavia, sottovia, attraversamenti etc.).</p>
+                  <p class="services__text">Redazione di progetti di opere di captazione, adduzione e distribuzione di risorse idriche. Progettazione di impianti di sollevamento, collettamento, trattamento, riciclo e riuso di acque. Progettazione di opere di ritenuta o derivazione di acqua (dighe, traverse, gallerie, canali) per l’approvvigionamento idrico o la produzione idroelettrica. Studi idrologici e idrogeologici.</p>
+                  <p class="services__text">Calcoli strutturali e modellazione con metodi agli elementi finiti di qualsiasi tipo di struttura in cemento armato, in acciaio, in c.a.p. e in legno. Progettazione architettonica di insediamenti urbani, lottizzazioni ed inserimento di grandi infrastrutture nel tessuto circostante. Recupero edilizio e restauri di edifici di importanza storica. </p>
+                  <p class="services__text">Messa a punto di sistemi integrati a indirizzo scientifico specialistico. Strutturazione di banche dati, sistemi informatici di monitoraggio, controllo, gestione, incluso l’addestramento all’uso del personale del Cliente. Consulenza sulla scelta e sull’impiego di pacchetti operativi (progettazione, contabilità tecnica, gestione). </p>
+                </div>
+                <div class="col-md-3 hidden-xs hidden-sm">
+                  <div class="services__header">
+                    <h2 class="section-title">Settori</h2>
+                    <div class="services__image"><img src="img/foto/high.jpg" alt=""></div>
                   </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 mix idraulica">
-                    <div class="portfolio__item"><a class="portfolio__link" href="#">
-                        <div class="portfolio__info"> <span></span></div><img class="portfolio__img" src="img/lavori/masera_1.jpg" alt=""/>
-                        <div class="portfolio__item-descr">
-                          <div class="portfolio__img-box"><img class="gallery-item" src="img/lavori/masera_1.jpg" alt=""/>
-                          </div>
-                          <h4>Strada provinciale SP5...</h4>
-                          <p></p>
-                        </div></a></div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 mix strade idraulica">
-                    <div class="portfolio__item"><a class="portfolio__link" href="#">
-                        <div class="portfolio__info"> <span></span></div><img class="portfolio__img" src="img/lavori/sp5_5.jpg" alt=""/>
-                        <div class="portfolio__item-descr">
-                          <div class="portfolio__img-box"><img class="gallery-item" src="img/lavori/sp5_5.jpg" alt=""/>
-                          </div>
-                          <h4>Strada provinciale SP5...</h4>
-                          <p></p>
-                        </div></a></div>
-                  </div>
-                  <div class="col-md-3 col-sm-4 col-xs-6 mix idraulica">
-                    <div class="portfolio__item"><a class="portfolio__link" href="#">
-                        <div class="portfolio__info"> <span></span></div><img class="portfolio__img" src="img/lavori/c/c1.jpg" alt=""/>
-                        <div class="portfolio__item-descr">
-                          <div class="portfolio__img-box"><img class="gallery-item" src="img/lavori/c/c1.jpg" alt=""/>
-                          </div>
-                          <h4>Autostrada A31 Valdastico sud...</h4>
-                          <p></p>
-                        </div></a></div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="portfolio__nav">
-                      <ul class="pages-nav">
-                        <li class="pages-nav__item pages-nav__item--active"><a href="#">1</a></li>
-                        <li class="pages-nav__item"><a href="#">2</a></li>
-                        <li class="pages-nav__item"><a href="#">3</a></li>
-                        <li class="pages-nav__item"><a href="#">4</a></li>
-                        <li class="pages-nav__item"><a href="#">></a></li>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-push-3">
+                  <ul class="services__list">
+                    <div class="col-sm-6">
+                      <li class="services__item services__item--current"><a class="services__link" href="#">
+                          <svg class="icon icon-road-with-broken-line ">
+                            <use xlink:href="img/svg/sprite.svg#road-with-broken-line"></use>
+                          </svg><span>Ingegneria dei trasporti</span></a></li>
+                    </div>
+                    <div class="col-sm-6">
+                      <li class="services__item"><a class="services__link" href="#">
+                          <svg class="icon icon-tube ">
+                            <use xlink:href="img/svg/sprite.svg#tube"></use>
+                          </svg><span>Ingegneria idraulica</span></a></li>
+                    </div>
+                    <div class="col-sm-6">
+                      <li class="services__item"><a class="services__link" href="#">
+                          <svg class="icon icon-crane ">
+                            <use xlink:href="img/svg/sprite.svg#crane"></use>
+                          </svg><span>Ingegneria edile</span></a></li>
+                    </div>
+                    <div class="col-sm-6">
+                      <li class="services__item"><a class="services__link" href="#">
+                          <svg class="icon icon-icon ">
+                            <use xlink:href="img/svg/sprite.svg#icon"></use>
+                          </svg><span>Informatica applicata</span></a></li>
+                    </div>
+                  </ul>
+                  <div class="btn-wrap"><span>Di Più</span><a class="btn btn--square" href="settori.html"><span>
+                        <svg class="icon icon-darrow-right ">
+                          <use xlink:href="img/svg/sprite.svg#darrow-right"></use>
+                        </svg></span></a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="team">
+            <div class="container">
+              <div class="row">
+                <div class="team__photo hidden-xs hidden-sm" style="background-image: url('img/team/team3.jpg');"></div>
+                <div class="col-md-7 col-md-push-2">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="team__caption">la squadra</div>
+                    </div>
+                    <div class="col-sm-12 team__info">
+                      <div class="team__info-wrap current">
+                        <div class="team__name">Dam Van</div>
+                        <div class="team__job">Co Founder</div>
+                        <p class="team__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.</p>
+                        <div class="team__contacts-wrap"><a class="team__contacts" href="#"><span>Phone:</span> (84) 169 275. 9059</a><a class="team__contacts" href="#"><span>Email:</span> Cavoicat@gmail.com </a></div>
+                      </div>
+                      <div class="team__info-wrap">
+                        <div class="team__name">Ben Larry</div>
+                        <div class="team__job">Photographer</div>
+                        <p class="team__desc">Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.</p>
+                        <div class="team__contacts-wrap"><a class="team__contacts" href="#"><span>Phone:</span> (84) 169 275. 2015</a><a class="team__contacts" href="#"><span>Email:</span> Cavoicat@gmail.com </a></div>
+                      </div>
+                      <div class="team__info-wrap">
+                        <div class="team__name">Mia Loren</div>
+                        <div class="team__job">Manager</div>
+                        <p class="team__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla. Consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. Praesent scelerisque tellus sit amet ante suscip aliquet magna fringilla.</p>
+                        <div class="team__contacts-wrap"><a class="team__contacts" href="#"><span>Phone:</span> (84) 169 275. 9059</a><a class="team__contacts" href="#"><span>Email:</span> Cavoicat@gmail.com </a></div>
+                      </div>
+                      <ul class="team__members">
+                        <li class="team__member"><a class="active" href="#"><img src="img/team/team3.jpg" alt="team3"></a></li>
+                        <li class="team__member"><a href="#"><img src="img/team/team2.jpg" alt="team2"></a></li>
+                        <li class="team__member"><a href="#"><img src="img/team/team1.jpg" alt="team1"></a></li>
                       </ul>
+                      <div class="btn-wrap"><span>Di Più</span><a class="btn btn--square" href="#"><span>
+                            <svg class="icon icon-darrow-right ">
+                              <use xlink:href="img/svg/sprite.svg#darrow-right"></use>
+                            </svg></span></a></div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section class="portfolio" id="certs">
+            <div class="container">
+              <h2 class="portfolio__title">CERTIFICATI DI QUALITA</h2><span class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel lectus ut mauris convallis lacinia dapibus sit amet neque. </span>
+              <div class="row">
+                <div class="col-xs-6 col-sm-3 col-sm-push-2"><a class="portfolio__cert-link" href="img/cert_1.jpg"><img class="portfolio__cert-img" src="img/cert_1.jpg" alt="Primo cert"></a></div>
+                <div class="col-xs-6 col-sm-3 col-sm-push-4"><a class="portfolio__cert-link" href="img/cert_2.jpg"><img class="portfolio__cert-img" src="img/cert_2.jpg" alt="Sec cert"></a></div>
               </div>
             </div>
           </section>
